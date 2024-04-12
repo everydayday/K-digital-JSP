@@ -10,7 +10,7 @@ String str2 = "안녕하세요!! ";
 <meta charset="UTF-8">
 <title>HelloJSP</title>
 </head>
-<body>
+<body> 
 	<h2>처음 만들어보는 <%= str1 %></h2>
 	<p>
 		<%
