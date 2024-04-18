@@ -21,7 +21,7 @@ public class CookieManager {
 				if(cookieName.equals(cName)) {
 					cookieValue = c.getValue();
 				}
-			}
+			} 
 		}
 		
 		return cookieValue;
