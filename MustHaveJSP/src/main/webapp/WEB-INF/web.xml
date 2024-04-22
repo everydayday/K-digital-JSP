@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
   <display-name>MustHaveJSP</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -12,6 +12,27 @@
   
   <context-param>
   	<param-name>INIT_PARAM</param-name>
-  	<param-value>web.xml에 저장한 초기화 매개변수</param-value>
+  	<param-value>web.xml에 저장한 초기화 매개변수</param-value>  	
   </context-param>
+  <context-param>
+  	<param-name>MySQLDriver</param-name>
+  	<param-value>com.mysql.cj.jdbc.Driver</param-value>  	
+  </context-param>
+  <context-param>
+  	<param-name>MySQLURL</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/musthave</param-value>  	
+  </context-param>
+  <context-param>
+  	<param-name>MySQLId</param-name>
+  	<param-value>musthave</param-value>  	
+  </context-param>
+  <context-param>
+  	<param-name>MySQLPwd</param-name>
+  	<param-value>tiger</param-value>  	
+  </context-param>
+  <session-config>
+  	<session-timeout>20</session-timeout>
+  </session-config>
+  
+  
 </web-app>
