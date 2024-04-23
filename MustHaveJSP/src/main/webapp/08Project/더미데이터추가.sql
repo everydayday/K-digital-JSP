@@ -1,0 +1,1 @@
+Insert INTO board VALUES (seq_board_num.nextval, "지금은 봄입니다". " 봄의 왈츠", "musthave", "sysdate", 0);
