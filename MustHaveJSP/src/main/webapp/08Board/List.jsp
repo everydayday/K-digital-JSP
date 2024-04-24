@@ -8,6 +8,7 @@
 <%@ page import = "board.BoardDTO" %>
 <%@ page import = "board.BoardDAO" %>
 
+	
 <%
 BoardDAO dao = new BoardDAO(application);
 
@@ -78,7 +79,7 @@ dao.close();
 		<tr align = "center">
 			<td><%= virtualNum %></td>
 			<td align = "left">
-				<a href = "View.jsp?num=<%= dto.getName() %>"><%= dto.getTitle() %></a>
+				<a href = "View.jsp?num=<%= dto.getNum() %>"><%= dto.getTitle() %></a>
 			</td>
 			<td align="center"><%= dto.getId() %></td>
 			<td align="center"><%= dto.getVisitcount() %></td>
